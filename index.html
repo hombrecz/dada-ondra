@@ -22,7 +22,7 @@
     </div>
 </div>
 
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="0">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
@@ -35,95 +35,121 @@
         <div>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="nav navbar-nav">
-                    <li><a href="#ceremony"> Obřad </a></li>
-                    <li><a href="#place"> Místo </a></li>
-                    <li><a href="#transport"> Doprava </a></li>
-                    <li><a href="#party"> Zahradní hostina </a></li>
-                    <li><a href="#gifts"> Dary </a></li>
-                    <li><a href="#dressCode"> Dress code </a></li>
-                    <li><a href="#schedule"> Program </a></li>
+                    <li><a href="#ceremony-block"> Obřad </a></li>
+                    <li><a href="#ceremony-block"> Místo </a></li>
+                    <li><a href="#ceremony-block"> Doprava </a></li>
+                    <li><a href="#party-block"> Zahradní hostina </a></li>
+                    <li><a href="#party-block"> Dary </a></li>
+                    <li><a href="#other"> Dress code </a></li>
+                    <li><a href="#other"> Program </a></li>
+                    <li><a href="#other"> Info </a></li>
                 </ul>
             </div>
         </div>
     </div>
 </nav>
 
-<div id="ceremony" class="container-fluid my-content">
-    <h2>Obřad</h2>
-    <p>
-        Budeme se brát a nějaký úvodní kecy okolo.
-    </p>
-    <p>
-        Obřad bude. V kostele. V Hejnicích. Od dvou. Ne ráno, odpoledne!
-    </p>
-    <a href="https://www.mapy.cz" target="_blank">Místo obřadu</a>
-    <!--TODO může být i vložená mapa, fotka katedrály-->
+<div  id="ceremony-block" class="container-fluid my-content">
+    <div class="row">
+        <div id="ceremony" class="col-sm-4">
+            <h3>Obřad</h3>
+            <p>
+                Budeme se brát a nějaký úvodní kecy okolo.
+            </p>
+            <p>
+                Obřad bude. V kostele. V Hejnicích. Od dvou. Ne ráno, odpoledne!
+            </p>
+            <a href="https://www.mapy.cz" target="_blank">Místo obřadu</a>
+            <!--TODO může být i vložená mapa, fotka katedrály-->
+        </div>
+        <div id="place" class="col-sm-4">
+            <h3>Místo</h3>
+            <p>
+                Bude zajištěna jen pěšky. Good Luck
+            </p>
+            <p>
+                Obřad bude. V kostele. V Hejnicích. Od dvou. Ne ráno, odpoledne!
+            </p>
+            <a href="https://www.mapy.cz" target="_blank">Místo</a>
+            <!--TODO odkaz, jak se dostat do Hejnic, pořešit pomoc s dopravou-->
+        </div>
+        <div id="transport" class="col-sm-4">
+            <h3>Doprava</h3>
+            <p>
+                Bude zajištěna jen pěšky. Good Luck
+            </p>
+            <p>
+                Obřad bude. V kostele. V Hejnicích. Od dvou. Ne ráno, odpoledne!
+            </p>
+            <a href="https://www.mapy.cz" target="_blank">Místo</a>
+            <!--TODO odkaz, jak se dostat do Hejnic, pořešit pomoc s dopravou-->
+        </div>
+    </div>
 </div>
 
-<div id="place" class="container-fluid my-content">
-    <h2>Místo</h2>
-    <p>
-        Bude zajištěna jen pěšky. Good Luck
-    </p>
-    <p>
-        Obřad bude. V kostele. V Hejnicích. Od dvou. Ne ráno, odpoledne!
-    </p>
-    <a href="https://www.mapy.cz" target="_blank">Místo</a>
-    <!--TODO odkaz, jak se dostat do Hejnic, pořešit pomoc s dopravou-->
+<div  id="photo-block-1" class="container-fluid my-content">
 </div>
 
-<div id="transport" class="container-fluid my-content">
-    <h2>Doprava</h2>
-    <p>
-        Bude zajištěna jen pěšky. Good Luck
-    </p>
-    <p>
-        Obřad bude. V kostele. V Hejnicích. Od dvou. Ne ráno, odpoledne!
-    </p>
-    <a href="https://www.mapy.cz" target="_blank">Místo</a>
-    <!--TODO odkaz, jak se dostat do Hejnic, pořešit pomoc s dopravou-->
+<div id="party-block" class="container-fluid my-content">
+    <div class="row">
+        <div id="party" class="col-sm-4">
+            <h3>Zahradní hostina</h3>
+            <p>
+                Jen pro zvaný, ale bude. Teda pokud jste zvaný a tady napíšeme kde. Jinak nic.
+            </p>
+        </div>
+        <div id="registration" class="col-sm-4">
+            <h3>Dejte nám vědět</h3>
+            <p>
+                Pst! Tu se registrujete, jinak nejste zvaný ani kdybyste měli pozvánku:
+            </p>
+            <a href="https://www.mapy.cz" target="_blank">Místo</a>
+            <!--TODO link na registraci - Google form - kdo dorazí/nedorazí, vzkaz-->
+        </div>
+        <div id="gifts" class="col-sm-4">
+            <h3>Dary</h3>
+            <p>
+                Kvůli nim to přece dělám, tohle je jasně výdělečnej podnik a kasovní trhák, ne? Ne?!
+            </p>
+            <a href="https://www.mapy.cz" target="_blank">Místo</a>
+            <!--TODO odkaz na dary-->
+        </div>
+    </div>
 </div>
 
-<div id="party" class="container-fluid my-content">
-    <h2>Zahradní hostina</h2>
-    <p>
-        Jen pro zvaný, ale bude. Teda pokud jste zvaný a tady napíšeme kde. Jinak nic.
-    </p>
-    <p>
-        Pst! Tu se registrujete, jinak nejste zvaný ani kdybyste měli pozvánku:
-    </p>
-    <a href="https://www.mapy.cz" target="_blank">Místo</a>
-    <!--TODO link na registraci - Google form - kdo dorazí/nedorazí, vzkaz-->
+<div  id="photo-block-2" class="container-fluid my-content">
 </div>
 
-<div id="gifts" class="container-fluid my-content">
-    <h2>Dary</h2>
-    <p>
-        Kvůli nim to přece dělám, tohle je jasně výdělečnej podnik a kasovní trhák, ne? Ne?!
-    </p>
-    <a href="https://www.mapy.cz" target="_blank">Místo</a>
-    <!--TODO odkaz na dary-->
+<div id="other" class="container-fluid my-content">
+    <div class="row">
+        <div id="dressCode" class="col-sm-4">
+            <h3>Dress code</h3>
+            <p>
+               sdfadsfadsf
+            </p>
+            <a href="https://www.mapy.cz" target="_blank">Místo</a>
+            <!--TODO odkaz na dary-->
+        </div>
+        <div id="schedule" class="col-sm-4">
+            <h3>Rozvrh</h3>
+            <p>
+                Neptejte se, sami nevíme.
+
+                XX:XX - něco
+                YY:YY - něco jinýho
+                ZZ:ZZ - asi konec
+            </p>
+        </div>
+        <div id="contacts" class="col-sm-4">
+            <h3>Kontakty</h3>
+            <p>
+                Podle toho, co bude třeba
+            </p>
+            <a href="https://www.mapy.cz" target="_blank">Místo</a>
+            <!--TODO důležité kontakty-->
+        </div>
+    </div>
 </div>
 
-<div id="dressCode" class="container-fluid my-content">
-    <h2>Dress code</h2>
-    <p>
-        Kvůli nim to přece dělám, tohle je jasně výdělečnej podnik a kasovní trhák, ne? Ne?!
-    </p>
-    <a href="https://www.mapy.cz" target="_blank">Místo</a>
-    <!--TODO odkaz na dary-->
-</div>
-
-<div id="schedule" class="container-fluid my-content">
-    <h2>Rozvrh</h2>
-    <p>
-        Neptejte se, sami nevíme.
-
-        XX:XX - něco
-        YY:YY - něco jinýho
-        ZZ:ZZ - asi konec
-    </p>
-</div>
-<!--TODO důležité kontakty-->
 </body>
 </html>
