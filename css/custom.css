@@ -1,0 +1,21 @@
+body {
+    position: relative;
+}
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+}
+
+.my-content {
+    padding-top: 50px;
+    height: 500px;
+}
