@@ -1,13 +1,44 @@
+@font-face {
+    font-family: 'Lora';
+    src: url('./../fonts/Lora-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'LoraBold';
+    src: url('./../fonts/Lora-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'LoraItalic';
+    src: url('./../fonts/Lora-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'LoraBoldItalic';
+    src: url('./../fonts/Lora-BoldItalic.ttf');
+}
+
 body {
     position: relative;
+    font: normal 14px Lora;
+    text-align: center;
 }
+
+h3 {
+    text-align: center;
+}
+
+.dl-horizontal dd {
+    text-align: left;
+}
+
 .affix {
     top:0;
     width: 100%;
-    z-index: 9999 !important;
+    z-index:100;
 }
 .navbar {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .affix ~ .container-fluid {
@@ -15,7 +46,26 @@ body {
     top: 50px;
 }
 
-.my-content {
-    padding-top: 50px;
+.content {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+
+.col-sm-4 > .photo-vertical {
+    max-width: 400px;
+}
+
+.col-sm-12 > .photo-horizontal {
+    max-width: 900px;
+    margin: auto;
+}
+
+.header-bg {
+    width: 100%;
     height: 500px;
+    background-image: url(./../images/pismena.svg), url(./../images/bg1.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%, 100%;
+    background-position: center center, center center;
 }
