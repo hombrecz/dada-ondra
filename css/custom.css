@@ -50,14 +50,13 @@ h3 {
     padding-top: 50px;
 }
 
-.col-sm-4 > .photo-vertical {
-    max-width: 400px;
-    margin: auto;
+.headimage {
+    max-width: 100%;
+    padding: 1em;
 }
 
-.col-sm-12 > .photo-horizontal {
-    max-width: 900px;
-    margin: auto;
+.headimage > img {
+    width: 100%;
 }
 
 .header-bg {
