@@ -47,14 +47,12 @@ h3 {
 }
 
 .content {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
     padding-top: 50px;
 }
 
 .col-sm-4 > .photo-vertical {
     max-width: 400px;
+    margin: auto;
 }
 
 .col-sm-12 > .photo-horizontal {
@@ -69,4 +67,9 @@ h3 {
     background-repeat: no-repeat, no-repeat;
     background-size: 50%, 100%;
     background-position: center center, center center;
+}
+
+.modal-do {
+    text-align: left;
+    margin: 10px;
 }
