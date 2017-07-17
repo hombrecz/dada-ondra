@@ -28,8 +28,7 @@ h3 {
     text-align: center;
 }
 
-
-.dl-horizontal dt{
+.dl-horizontal dt {
     width: 140px;
 }
 
@@ -51,6 +50,17 @@ h3 {
     position: relative;
     top: 50px;
 }
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
 
 .content {
     padding-top: 50px;
