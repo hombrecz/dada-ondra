@@ -28,8 +28,14 @@ h3 {
     text-align: center;
 }
 
+
+.dl-horizontal dt{
+    width: 140px;
+}
+
 .dl-horizontal dd {
     text-align: left;
+    margin-left: 150px;
 }
 
 .affix {
