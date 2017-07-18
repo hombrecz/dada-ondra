@@ -3,32 +3,9 @@ $(document).ready(function () {
 
     var lastCommand = "i";
 
-    function openMobileKeyboard() {
-        $('#mobile').click(function (e) {
-            $('#mobile').focus();
-        });
-
-        $('#cmd-btn').click(function (e) {
-            $('#mobile').trigger('click');
-        })
-    }
-
-    function showMobileButton() {
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-            $('.cmd-block').show();
-            $('#mobile').on('input', function (e) {
-                $(window).trigger('keypress', e);
-            });
-        } else {
-            $('.cmd-block').hide();
-        }
-    }
-
     function init() {
         addListeners();
         showIntro();
-        openMobileKeyboard();
-        showMobileButton();
     }
 
     function addListeners() {
@@ -163,7 +140,6 @@ $(document).ready(function () {
 
     function showRandomQuote() {
         appendCmdLine("> q");
-        //TODO - more quotes
         var textArray = [
             'Blbý svatby...',
             'How about a nice game of chess?',
