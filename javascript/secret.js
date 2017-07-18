@@ -4,21 +4,23 @@ $(document).ready(function () {
     var lastCommand = "i";
 
     function openMobileKeyboard() {
-        $('#mobile').click(function(e){ $('#mobile').focus(); });
+        $('#mobile').click(function (e) {
+            $('#mobile').focus();
+        });
 
-        $('#cmd-btn').click(function(e){
+        $('#cmd-btn').click(function (e) {
             $('#mobile').trigger('click');
         })
     }
 
     function showMobileButton() {
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-            $('#cmd-block').show();
-            $(document).on('keyup','#mobile', function(e) {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            $('.cmd-block').show();
+            $('#mobile').on('input', function (e) {
                 $(window).trigger('keypress', e);
             });
         } else {
-            $('#cmd-block').hide();
+            $('.cmd-block').hide();
         }
     }
 
@@ -30,44 +32,42 @@ $(document).ready(function () {
     }
 
     function addListeners() {
-        $(function () {
-            $(window).keypress(function (e) {
-                var char = String.fromCharCode(e.which);
+        $(window).keypress(function (e) {
+            var char = String.fromCharCode(e.which);
 
-                switch (char) {
-                    case "c":
-                        clearConsole();
-                        break;
-                    case "e":
-                        showCeremony();
-                        break;
-                    case "g":
-                        showGifts();
-                        break;
-                    case "h":
-                        showHelp();
-                        break;
-                    case "i":
-                        clearConsole();
-                        showIntro();
-                        break;
-                    case "o":
-                        openLinkInNewTab();
-                        break;
-                    case "p":
-                        showParty();
-                        break;
-                    case "q":
-                        showRandomQuote();
-                        break;
-                    case "r":
-                        showRegistrationForm();
-                        break;
-                    default:
-                }
+            switch (char) {
+                case "c":
+                    clearConsole();
+                    break;
+                case "e":
+                    showCeremony();
+                    break;
+                case "g":
+                    showGifts();
+                    break;
+                case "h":
+                    showHelp();
+                    break;
+                case "i":
+                    clearConsole();
+                    showIntro();
+                    break;
+                case "o":
+                    openLinkInNewTab();
+                    break;
+                case "p":
+                    showParty();
+                    break;
+                case "q":
+                    showRandomQuote();
+                    break;
+                case "r":
+                    showRegistrationForm();
+                    break;
+                default:
+            }
 
-                lastCommand = char;
-            });
+            lastCommand = char;
         });
     }
 
@@ -191,7 +191,7 @@ $(document).ready(function () {
             'Cluster bombing from B-52s are very, very accurate. The bombs are guaranteed to always hit the ground.',
             'We, the willing, led by the unknowing, are doing the impossible for the ungrateful. We have now done so much for so long with so little, we are now capable of doing anything with nothing.'
         ];
-        var randomNumber = Math.floor(Math.random()*textArray.length);
+        var randomNumber = Math.floor(Math.random() * textArray.length);
 
         appendCmdLine(textArray[randomNumber]);
         blinkingPointer();
