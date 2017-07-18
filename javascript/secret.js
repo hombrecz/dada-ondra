@@ -4,7 +4,7 @@ $(document).ready(function () {
     var lastCommand = "i";
 
     function openMobileKeyboard() {
-        $('#mobile').click(function(e){ $(this).focus(); });
+        $('#mobile').click(function(e){ $('#mobile').focus(); });
 
         $('#cmd-btn').click(function(e){
             $('#mobile').trigger('click');
