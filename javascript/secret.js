@@ -6,14 +6,12 @@ $(document).ready(function () {
     function openMobileKeyboard() {
         $('#mobile').click(function(e){ $(this).focus(); });
 
-        $('#cmd-btn').click(function(e)
-        {
-            e.preventDefault();
+        $('#cmd-btn').click(function(e){
             $('#mobile').trigger('click');
         })
     }
 
-    function addMobileButton() {
+    function showMobileButton() {
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             $('#cmd-btn').show();
         } else {
@@ -24,8 +22,8 @@ $(document).ready(function () {
     function init() {
         addListeners();
         showIntro();
-        addMobileButton();
         openMobileKeyboard();
+        showMobileButton();
     }
 
     function addListeners() {
