@@ -8,6 +8,7 @@ $(document).ready(function () {
 
         $('#cmd').click(function(e)
         {
+            e.preventDefault();
             $('#mobile').trigger('click');
         })
     }
@@ -155,7 +156,30 @@ $(document).ready(function () {
         //TODO - more quotes
         var textArray = [
             'Blbý svatby...',
-            'How about a nice game of chess?'
+            'How about a nice game of chess?',
+            'Think out of box!',
+            'When I was here, I wanted to be there, when I was there, all I could think of was getting back into the jungle.',
+            'Low whistles are twice as long and play an octave lower. They\'re good to own because, in a pinch, you can use one to defend yourself in a pub.',
+            'Night Stalkers Don\'t Quit!',
+            'The trouble with Scotland is that it\'s full of Scots.',
+            'The only replacement for a DC-3 is another DC-3..',
+            'We\'re going to bomb them back into the stone Age.',
+            'The difference between a duck and a co-pilot? The duck can fly.',
+            'A helicopter is a collection of rotating parts going round and round and reciprocating parts going up and down - all of them trying to become random in motion.',
+            'Good judgment comes from experience and experience comes from bad judgment.',
+            'Aviation is not so much a profession as it is a disease.',
+            'The RF-4E Phantom - living proof that if you put enough engine on something . . . even a brick could fly.',
+            'When a forecaster talks about yesterday\'s weather, he\'s an historian, when he talks about tomorrow\'s, he\'s reading tea leaves.',
+            'The odds against there being a bomb on a plane are a million to one, and against two bombs a million times a million to one. Next time you fly, cut the odds and take a bomb.',
+            'Real planes use only a single stick to fly. This is why bulldozers & helicopters — in that order — need two.',
+            'Roger: Used when you\'re not sure what else to say.',
+            'Helicopters are for the rich... or the enlisted.',
+            'A \'good\' landing is one from which you can walk away. A \'great\' landing is one after which they can use the aeroplane again.',
+            'What\'s the difference between God and fighter pilots? God doesn\'t think he\'s a fighter pilot.',
+            'Some pilots will make an emergency out of a bad magneto check. Others, upon losing a wing, will ask for a lower altitude.',
+            'There are Rules and there are Laws. The rules are made by men who think that they know better how to fly your airplane than you. The Laws (of Physics) were made by the Great One. You can, and sometimes should, suspend the Rules but you can never suspend the Laws.',
+            'Cluster bombing from B-52s are very, very accurate. The bombs are guaranteed to always hit the ground.',
+            'We, the willing, led by the unknowing, are doing the impossible for the ungrateful. We have now done so much for so long with so little, we are now capable of doing anything with nothing.'
         ];
         var randomNumber = Math.floor(Math.random()*textArray.length);
 
