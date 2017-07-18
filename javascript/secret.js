@@ -6,16 +6,25 @@ $(document).ready(function () {
     function openMobileKeyboard() {
         $('#mobile').click(function(e){ $(this).focus(); });
 
-        $('#cmd').click(function(e)
+        $('#cmd-btn').click(function(e)
         {
             e.preventDefault();
             $('#mobile').trigger('click');
         })
     }
 
+    function addMobileButton() {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            $('#cmd-btn').show();
+        } else {
+            $('#cmd-btn').hide();
+        }
+    }
+
     function init() {
         addListeners();
         showIntro();
+        addMobileButton();
         openMobileKeyboard();
     }
 
