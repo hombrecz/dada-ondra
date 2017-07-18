@@ -14,6 +14,9 @@ $(document).ready(function () {
     function showMobileButton() {
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             $('#cmd-block').show();
+            $(document).on('keyup','#mobile', function(e) {
+                $(window).trigger('keypress', e);
+            });
         } else {
             $('#cmd-block').hide();
         }
