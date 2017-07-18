@@ -3,9 +3,19 @@ $(document).ready(function () {
 
     var lastCommand = "i";
 
+    function openMobileKeyboard() {
+        $('#mobile').click(function(e){ $(this).focus(); });
+
+        $('#cmd').click(function(e)
+        {
+            $('#mobile').trigger('click');
+        })
+    }
+
     function init() {
         addListeners();
         showIntro();
+        openMobileKeyboard();
     }
 
     function addListeners() {
